@@ -1,0 +1,8 @@
+@use '../css/style';
+
+body {
+  @include style.body;
+  background-image: url('../images/space.jpg');
+  background-size: cover;
+  background-position: center;
+}

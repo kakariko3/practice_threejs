@@ -1,0 +1,5 @@
+@use '../css/style';
+
+body {
+  @include style.body;
+}

@@ -1,6 +1,6 @@
 const path = require('path');
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // entryとHtmlWebpackPluginを動的に追加
@@ -53,7 +53,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[hash].css',
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ],
 
   resolve: {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>three.js webgl - Obj Data Measuring Tool</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <!-- <script src="./build/three.js"></script>
+    <script src="./js/threejs/loaders/PCDLoader.js"></script>
+    <script src="./js/threejs/loaders/MTLLoader.js"></script>
+    <script src="./js/threejs/loaders/OBJLoader.js"></script>
+    <script src="./js/threejs/renderers/Projector.js"></script>
+    <script src="./js/threejs/controls/OrbitControls.js"></script>
+    <script src="./js/threejs/WebGL.js"></script>
+    <script src="./js/threejs/libs/stats.min.js"></script> -->
+  </head>
+  <body style="margin: 0px; padding: 0px">
+    <style type="text/css">
+      #info {
+        color: white;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+      }
+      #mousePosition {
+        white-space: nowrap;
+        color: white;
+        top: 80px;
+        left: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+      }
+      #lblDistance {
+        white-space: nowrap;
+        color: white;
+        top: 100px;
+        left: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+      }
+    </style>
+
+    <div id="container">
+      <div id="mousePosition" style="position: absolute; width: 20px; z-index: 10">Position:</div>
+      <div id="lblDistance" style="position: absolute; width: 20px; z-index: 10">Distance:</div>
+    </div>
+    <div id="info"></div>
+
+    <input
+      id="placeStart"
+      type="button"
+      value="place start"
+      style="position: absolute; left: 10px; top: 10px; width: 100px; z-index: 100"
+    />
+    <input
+      id="placeEnd"
+      type="button"
+      value="place end"
+      style="position: absolute; left: 10px; top: 40px; width: 100px; z-index: 100"
+    />
+    <input
+      type="button"
+      value="back"
+      style="position: absolute; left: 10px; top: 140px; width: 100px; z-index: 100"
+      onclick="location.href='./upload.html'"
+    />
+
+    <!-- <script src="./js/measure.js"></script> -->
+  </body>
+</html>
